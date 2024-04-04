@@ -24,7 +24,8 @@
   .columns > div {
     align-items: start;
     flex-direction: unset;
-    gap: 12px;
+    gap: 5px;
+    padding-bottom: 5px;
   }
 
   .columns > div > div {

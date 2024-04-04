@@ -2,6 +2,9 @@ footer {
   padding: 2rem;
   background-color: var(--light-color);
   font-size: var(--body-font-size-s);
+  text-align: left;
+  color: #FFF;
+  background-color: #666;
 }
 
 footer .footer {
@@ -11,4 +14,10 @@ footer .footer {
 
 footer .footer p {
   margin: 0;
+}
+
+footer .footer h5 {
+  color: #73c04d;
+  font-size: 1.5rem;
+  font-weight: 700;
 }

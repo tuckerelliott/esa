@@ -101,6 +101,11 @@ h6 { font-size: var(--heading-font-size-xs) }
 
 h2 {
   color: #73c04d;
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 700;
 }
 
 p, dl, ol, ul, pre, blockquote {
