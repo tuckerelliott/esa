@@ -17,13 +17,14 @@
 
 .columns > div > .columns-img-col img {
   display: block;
+  aspect-ratio: 4 / 3;
 }
 
 @media (width >= 900px) {
   .columns > div {
-    align-items: center;
+    align-items: start;
     flex-direction: unset;
-    gap: 32px;
+    gap: 12px;
   }
 
   .columns > div > div {

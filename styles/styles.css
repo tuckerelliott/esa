@@ -11,35 +11,38 @@
  */
 
 :root {
-  /* colors */
-  --link-color: #035fe6;
-  --link-hover-color: #136ff6;
-  --background-color: white;
-  --light-color: #eee;
-  --dark-color: #ccc;
-  --text-color: black;
-  --highlight-background-color: grey;
+/* fonts */
+--heading-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+--body-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+--fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback;
-  --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+/* colors */
+--text-color: #483729;
+--link-color: #73c04d;
+--link-hover-color: #73c04d;
+--background-color: #ffffff;
+--overlay-background-color: #eeeeee;
+--highlight-background-color: #cccccc;
 
-  /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 18px;
-  --body-font-size-xs: 16px;
+/* sizes */
+--heading-font-size-xxl: 55px;
+--heading-font-size-xl: 1.75rem;
+--heading-font-size-l: 28px;
+--heading-font-size-m: 24px;
+--heading-font-size-s: 18px;
+--heading-font-size-xs: 16px;
+--body-font-size-xxl: 24px;
+--body-font-size-xl: 20px;
+--body-font-size-l: 16px;
+--body-font-size-m: 1rem;
+--body-font-size-s: 1rem;
+--body-font-size-xs: 13.432px;
+--body-font-size-xxs: 13.008px;
+--body-font-size-undefined: 12.992px;
 
-  /* heading sizes */
-  --heading-font-size-xxl: 48px;
-  --heading-font-size-xl: 40px;
-  --heading-font-size-l: 32px;
-  --heading-font-size-m: 24px;
-  --heading-font-size-s: 20px;
-  --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 88px;
 }
 
 @font-face {
@@ -52,7 +55,7 @@
 @media (width >= 900px) {
   :root {
     --heading-font-size-xxl: 60px;
-    --heading-font-size-xl: 48px;
+    --heading-font-size-xl: 1.75rem;
     --heading-font-size-l: 36px;
     --heading-font-size-m: 30px;
     --heading-font-size-s: 24px;
@@ -68,6 +71,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
+  text-align: center;
 }
 
 body.appear {
@@ -81,7 +85,7 @@ header {
 h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
@@ -94,6 +98,10 @@ h3 { font-size: var(--heading-font-size-l) }
 h4 { font-size: var(--heading-font-size-m) }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
+
+h2 {
+  color: #73c04d;
+}
 
 p, dl, ol, ul, pre, blockquote {
   margin-top: 1em;
@@ -150,7 +158,7 @@ a.button:any-link, button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
+  border-radius: 1px;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
@@ -193,13 +201,13 @@ main .section {
 
 @media (width >= 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: 12px 64px;
   }
 }
 
 @media (width >= 900px) {
   .section > div {
-    max-width: 1200px;
+    /* max-width: 1200px;*/
     margin: auto;
   }
 }
@@ -207,5 +215,9 @@ main .section {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
+  color: #FFF;
+  background-size: cover;
+  background-image: url(https://www.extendedstayamerica.com/contentAsset/image/310ffb47-c87e-4f4f-a117-d475fb96d947/fileAsset/jpeg_q/80/perks-sign-up-banner.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
