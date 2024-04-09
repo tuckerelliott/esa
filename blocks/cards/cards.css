@@ -47,4 +47,5 @@
 
 .cards.large > ul > li {
   box-shadow: 0 0 5px 1px hsla(0,0%,80%,.5);
+  margin-bottom: 2rem;
 }
