@@ -14,6 +14,12 @@
 
 .cards .cards-card-body {
   margin: 16px;
+  text-align: left;
+}
+
+.cards .cards-card-body a.button {
+  all: unset;
+  text-decoration: underline;
 }
 
 .cards .cards-card-image {
@@ -28,4 +34,17 @@
   width: 100%;
   /* aspect-ratio: 4 / 3; */
   object-fit: cover;
+}
+
+.cards.large > ul > li img {
+  aspect-ratio: 4 / 3;
+}
+
+.cards.large {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.cards.large > ul > li {
+  box-shadow: 0 0 5px 1px hsla(0,0%,80%,.5);
 }
