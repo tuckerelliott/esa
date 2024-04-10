@@ -145,10 +145,11 @@ header .nav-brand {
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
+  padding-top: 20px;
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 10rem;
   height: auto;
 }
 
@@ -173,6 +174,7 @@ header nav .nav-sections ul  {
   padding-left: 0;
   font-size: var(--body-font-size-s);
   font-weight: 500;
+  padding-top: 20px;
 }
 
 header nav .nav-sections ul > li {
@@ -273,4 +275,32 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+
+header nav .nav-quickLinks {
+  grid-area: sections;
+  flex: 1 1 auto;
+  background-color: #73c04d;
+  color: #FFF;
+  display: inline-block;
+  visibility: visible;
+  align-self: start;
+  position: absolute;
+  width: 110%;
+  margin-left: -240px;
+  height: 1.625rem;
+}
+
+header nav .nav-quickLinks ul {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+  color: #FFF;
+  margin: 0px 200px 0px 200px;
+  font-size: 0.875rem;
+}
+
+header nav .nav-quickLinks ul li:nth-child(2) {
+  margin-left: auto;
 }

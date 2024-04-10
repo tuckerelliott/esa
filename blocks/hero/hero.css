@@ -33,3 +33,11 @@ main .hero-container {
   width: 100%;
   height: 100%;
 }
+
+.hero > div > div > p > picture > img {
+  all: unset;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

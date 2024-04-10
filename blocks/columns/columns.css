@@ -21,29 +21,32 @@
   aspect-ratio: 4 / 3;
 }
 
+.columns > div > div {
+  flex: 1;
+  order: unset;
+  position: relative;
+}
+
+.columns > div > div > h2,
+.columns > div > div > h3,
+.columns > div > div > h4,
+.columns > div > div > h5 {
+  flex: 1;
+  order: unset;
+  position: absolute;
+  bottom: 5%;
+  color: #FFF;
+  font-size: 1.5rem;
+  padding: 1.5rem 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 @media (width >= 900px) {
   .columns > div {
     align-items: start;
     flex-direction: unset;
     gap: 5px;
     padding-bottom: 5px;
-  }
-
-  .columns > div > div {
-    flex: 1;
-    order: unset;
-    position: relative;
-  }
-
-  .columns > div > div h3 {
-    flex: 1;
-    order: unset;
-    position: absolute;
-    bottom: 5%;
-    color: #FFF;
-    font-size: 1.5rem;
-    padding: 1.5rem 3.5rem;
-    font-weight: 700;
-    line-height: 1.2;
   }
 }
