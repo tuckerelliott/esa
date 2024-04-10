@@ -26,3 +26,13 @@ footer .footer img {
   height: auto;
   width: 220px;
 }
+
+footer .footer .columns > div > div > h2,
+footer .footer .columns > div > div > h3,
+footer .footer .columns > div > div > h4,
+footer .footer .columns > div > div > h5 {
+  all: unset;
+  color: #73c04d;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
