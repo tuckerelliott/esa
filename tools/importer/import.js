@@ -49,6 +49,24 @@ const createMetadata = (main, document) => {
   return meta;
 };
 
+const createHero = (main, document) => {
+  const hero = {};
+
+  const title = document.querySelector('h1');
+  const img = document.querySelector('img');
+  const subheader = document.querySelector('div.esa-hero-subheading p');
+  const cells = [
+    ['Hero'],
+    [img],
+    [title],
+    [subheader]
+  ];
+  const table = WebImporter.DOMUtils.createTable(cells, document);
+  main.prepend(table);
+
+  return hero;
+};
+
 export default {
   /**
      * Apply DOM operations to the provided document and return
@@ -74,6 +92,15 @@ export default {
 
     // create the metadata block and append it to the main element
     createMetadata(main, document);
+
+    // final cleanup
+    WebImporter.DOMUtils.remove(main, [
+        '.esa-page-booking-container', '.esa-spinner-page', '.esa-container', '.esa-carousel-layout-3', '.col-lg-6', '.modal'
+    ]);
+
+    // create the hero block and append it to the main element
+    createHero(main, document);
+
 
     return main;
   },

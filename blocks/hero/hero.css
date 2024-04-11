@@ -20,6 +20,10 @@ main .hero-container {
   color: white;
 }
 
+.hero div {
+  font-size: 1.5rem;;
+}
+
 .hero picture {
   position: absolute;
   z-index: -1;
