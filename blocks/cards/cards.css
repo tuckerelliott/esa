@@ -49,3 +49,12 @@
   box-shadow: 0 0 5px 1px hsla(0,0%,80%,.5);
   margin-bottom: 2rem;
 }
+
+.cards.large > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+  grid-gap: 16px;
+}
