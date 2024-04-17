@@ -20,6 +20,10 @@ main .hero-container {
   color: white;
 }
 
+.hero p {
+  text-align: center;
+}
+
 .hero div {
   font-size: 1.5rem;;
 }
